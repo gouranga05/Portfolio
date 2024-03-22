@@ -1,0 +1,124 @@
+@media (max-width:991px) {
+
+  header,
+  header.sticky,
+  footer {
+    padding: 15px 5%;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+  .navlist a {
+    padding: 8px 15px;
+  }
+
+  :root {
+    --big-font: 2.2rem;
+    --normal-font: 1.8rem;
+    --neon-box-shadow: 0 0 .8rem #12f7ff;
+    --h2-font: 3rem;
+  }
+
+  .home-content {
+    margin-top: 5rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+  #menu-icon {
+    display: block;
+    transition: all .4s ease;
+  }
+
+  .navlist {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    padding: 0 5%;
+    transform: translateY(-200%);
+    transition: all .45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .navlist.open {
+    transform: translateY(0);
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home-image {
+    margin-bottom: 5rem;
+  }
+
+  .liquid-shape {
+    width: 80%;
+    left: 10%;
+    top: 13%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .skill-main {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    margin: 2.5rem 0;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width:420px) {
+  html {
+    font-size: 80%;
+  }
+
+  footer p {
+    font-size: .6rem;
+  }
+
+  .filter-buttons .button {
+    font-size: .8rem;
+  }
+
+  .img-about img {
+    width: 300px;
+  }
+
+  .info-about1,
+  .info-about2,
+  .info-about3 {
+    display: none;
+  }
+}
